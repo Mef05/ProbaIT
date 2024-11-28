@@ -5,6 +5,8 @@ body {
 }
 
 .header {
+    top: 0;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +23,7 @@ body {
     padding: 0 2rem;
     font-size: 1.5rem;
     font-weight: bold;
+    display: flex;
 }
 
 .nav-links {
@@ -40,10 +43,18 @@ body {
 .auth-btn {
     background-color: #002366;
     color: white;
-    border: none;
     gap: 2rem;
     padding: 0.5rem 2rem;
-    border-radius: 5px;
     cursor: pointer;
     text-size-adjust: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 1.2rem;
+    border-color: #002366;
+    border-width: 0.2rem;
+}
+
+.auth-btn:hover {
+    border-color: aliceblue;
 }
