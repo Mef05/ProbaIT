@@ -20,7 +20,7 @@ function Register() {
                             <input
                                 type="text"
                                 placeholder="Full Name"
-                                className="w-full  rounded-md bg-theBlue text-white 
+                                className="w-full  rounded-md bg-theBlue text-white outline-none
                             placeholder:bg-theBlue placeholder:text-white placeholder:font-semibold"
                             />
                         </div>
@@ -29,7 +29,7 @@ function Register() {
                             <input
                                 type="text"
                                 placeholder="Telephone"
-                                className="w-full  rounded-md bg-theBlue text-white 
+                                className="w-full  rounded-md bg-theBlue text-white outline-none
                             placeholder:bg-theBlue placeholder:text-white placeholder:font-semibold"
                             />
                         </div>
@@ -38,7 +38,7 @@ function Register() {
                             <input
                                 type="text"
                                 placeholder="E-mail"
-                                className="w-full  rounded-md bg-theBlue text-white 
+                                className="w-full  rounded-md bg-theBlue text-white outline-none
                             placeholder:bg-theBlue placeholder:text-white placeholder:font-semibold"
                             />
                         </div>
@@ -48,7 +48,7 @@ function Register() {
                             <input
                                 type="password"
                                 placeholder="Password"
-                                className="w-full  rounded-md bg-theBlue text-white 
+                                className="w-full  rounded-md bg-theBlue text-white outline-none
                             placeholder:bg-theBlue placeholder:text-white placeholder:font-semibold"
                             />
                         </div>
@@ -56,8 +56,8 @@ function Register() {
                             <img className='mx-4 scale-75' src={lock} />
                             <input
                                 type="password"
-                                placeholder="Confirm    Password"
-                                className="w-full  rounded-md bg-theBlue text-white 
+                                placeholder="Confirm Password"
+                                className="w-full  rounded-md bg-theBlue text-white outline-none
                             placeholder:bg-theBlue placeholder:text-white placeholder:font-semibold"
                             />
                         </div>

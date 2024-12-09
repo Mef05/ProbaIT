@@ -17,9 +17,11 @@ import Home from './Home';
 
 const root = document.getElementById("root");
 
+const user = 'login';
+
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
-    <Header userState="login" />
+    <Header userState={user} />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />

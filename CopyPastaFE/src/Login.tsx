@@ -19,7 +19,7 @@ function Login() {
                             <input
                                 type="text"
                                 placeholder="E-mail"
-                                className="w-full h-12 rounded-md bg-theBlue text-white 
+                                className="w-full h-12 rounded-md bg-theBlue text-white outline-none
                             placeholder:bg-theBlue placeholder:text-white placeholder:font-semibold"
                             />
                         </div>
@@ -28,7 +28,7 @@ function Login() {
                             <input
                                 type="password"
                                 placeholder="Password"
-                                className="w-full h-12 rounded-md bg-theBlue text-white 
+                                className="w-full h-12 rounded-md bg-theBlue text-white outline-none
                             placeholder:bg-theBlue placeholder:text-white placeholder:font-semibold"
                             />
                         </div>
