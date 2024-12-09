@@ -1,20 +1,32 @@
 import React from 'react';
 import fundalHome from './assets/fundalHome.svg';
+import Header from './Header';
 import footer from './assets/footer.svg';
 import yt from './assets/yt.svg';
 import fb from './assets/fb.svg';
 import insta from './assets/insta.svg';
 import tw from './assets/tw.svg';
+import TopRatedRecipe from './custom_types/top_rated_recipe';
 
 
 function Home() {
     return (
-        <div className='bg-white'>
+        <div className='absolute -z-10'>
             <img className='p-0 m-0 border-0 w-full h-full' src={fundalHome} alt="background" />
 
-            <div className='bg-[#002366] h-[29rem] w-full md:flex'>
-                <h1 className='mx-auto text-white text-[3.2rem] pt-3 font-extrabold'>Top rated recipes</h1>
+            <div className='grid gap-10 grid-cols-3 grid-rows-[5rem_24rem] items-center justify-center bg-[#002366] h-[29rem] w-full'>
+                <h1 className='col-span-3 mx-auto text-white text-[3.2rem] pt-3 font-extrabold text-center'>Top rated recipes</h1>
+                <div className='col-span-1 flex justify-center items-center'>
+                    <TopRatedRecipe title='Pasta Carbonara' stars={5} nr_rating={100} author='Gordon Ramsay' image_src='https://img.taste.com.au/86bOXAkG/taste/2016/11/carbonara-sauce-28894-1.jpeg' />
+                </div>
 
+                <div className='col-span-1 flex justify-center items-center'>
+                    <TopRatedRecipe title='Pasta Carbonara' stars={5} nr_rating={100} author='Gordon Ramsay' image_src='https://img.taste.com.au/86bOXAkG/taste/2016/11/carbonara-sauce-28894-1.jpeg' />
+                </div>
+
+                <div className='col-span-1 flex justify-center items-center'>
+                    <TopRatedRecipe title='Pasta Carbonara' stars={5} nr_rating={100} author='Gordon Ramsay' image_src='https://img.taste.com.au/86bOXAkG/taste/2016/11/carbonara-sauce-28894-1.jpeg' />
+                </div>
             </div>
             <div className='bg-white'>
                 <form className='mt-10 place-content-center w-full md:flex'>

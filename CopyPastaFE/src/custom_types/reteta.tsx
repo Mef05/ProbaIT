@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 
-interface TopRatedRecipeProps {
+interface RecipeProps {
     title: string;
     stars: number;
     image_src: string;
@@ -17,11 +17,11 @@ const renderStars = (stars: number) => {
         </div>
     );
 };
-const TopRatedRecipe: React.FC<TopRatedRecipeProps> = ({ title, stars, nr_rating, author, image_src }) => {
+const Recipe: React.FC<RecipeProps> = ({ title, stars, nr_rating, author, image_src }) => {
     return (
-        <div className='grid mx-auto bg-white grid-rows-1 grid-cols-2 items-center justify-center w-[85%] h-[15rem]'>
-            <img src={image_src} alt="recipe" className='mx-auto border-r-2 border-green-600 object-cover h-full' />
-            <div className='pl-4'>
+        <div className='flex flex-cols flex-wrap bg-white items -center justify-center w-[14vw] h-[15rem]'>
+            <img src={image_src} alt="recipe" className='mx-auto border-b-2 border-green-600 object-cover w-full h-full' />
+            <div className='w-full bg-gray-100 shadow-xl'>
                 <h1 className='block text-center text-2xl font-bold'>{title}</h1>
 
                 <div className='block text-center'>{renderStars(stars)}</div>
@@ -30,11 +30,11 @@ const TopRatedRecipe: React.FC<TopRatedRecipeProps> = ({ title, stars, nr_rating
                 <p className='block text-center'>{nr_rating}</p>
                 <hr className='my-2 bg-transparent' />
 
-                <p className='block text-center'>Author</p>
-                <p className='block text-center'>{author}</p>
+                <p className='block text-center text-[1rem]'>Author</p>
+                <p className='block text-center text-[1.5rem]'>{author}</p>
             </div>
         </div>
     );
 };
 
-export default TopRatedRecipe;
+export default Recipe;
