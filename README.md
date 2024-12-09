@@ -1,4 +1,4 @@
-# Proba-IT-2024-Template
+# Proba-IT-2024-Ștefanescu Andrei-Cosmin
 
 ### Acest template public poate fi folosit pentru a vă crea repository-ul pentru proba tehnică. El permite și crearea automată de issue-uri, în concordanță cu task-urile probei:
 * Homepage
